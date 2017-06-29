@@ -459,7 +459,6 @@ p {
 h1, h2, h3, h4, h5 {
   margin: 1.414em 0 0.5em;
   line-height: 1.65;
-  text-transform: uppercase;
   font-family: "Gotham-Medium", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
   @media (max-width: 768px) {
     h1, h2, h3, h4, h5 {
