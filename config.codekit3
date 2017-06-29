@@ -15,6 +15,30 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/build\/fonts\/GothamSSm-Bold.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/fonts\/GothamSSm-Bold.otf",
+		"oF": 0
+		},
+	"\/build\/fonts\/GothamSSm-Book.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/fonts\/GothamSSm-Book.otf",
+		"oF": 0
+		},
+	"\/build\/fonts\/GothamSSm-Light.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/fonts\/GothamSSm-Light.otf",
+		"oF": 0
+		},
+	"\/build\/fonts\/GothamSSm-Medium.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/fonts\/GothamSSm-Medium.otf",
+		"oF": 0
+		},
 	"\/build\/index.html": {
 		"ft": 8192,
 		"oA": 2,
