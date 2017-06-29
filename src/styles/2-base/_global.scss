@@ -1,0 +1,29 @@
+html{
+  background: white;
+}
+.container{
+  @include outer-container;
+  overflow: auto;
+
+  @media (max-width: $breakpoint-desktop) {
+		padding: 0 30px;
+	}
+
+  img{
+    max-width: 100%; // temp style, remove after
+  }
+}
+a:link, a:visited{
+  color: $turquoise;
+  @include transition15;
+}
+a:hover, a:active{
+  color: $coal;
+}
+a.linkOut:after{
+  content: url(../images/linkOut.svg);
+  margin-left: 10px;
+}
+.clearFix{
+  clear: both;
+}
