@@ -568,3 +568,42 @@ em {
 
 strong {
   font-family: "Gotham-Bold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+
+#hero {
+  background: url("../images/community_banner.jpg") no-repeat center;
+  background-size: cover;
+  height: 600px;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; }
+  #hero:after {
+    content: "";
+    width: 50%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; }
+  #hero #logo {
+    background: url("../images/logo_white.svg") no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    top: 20px;
+    right: 20px; }
+  #hero #logo span {
+    display: none; }
+  #hero .content {
+    width: 70%;
+    max-width: 900px; }
+  #hero h1, #hero h2 {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: "Gotham-Bold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
