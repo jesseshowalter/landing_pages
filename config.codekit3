@@ -7,7 +7,7 @@
 		"uuidString": "A7AC6C27-0C71-4066-AA0E-E805F3E4D8B4"
 		}
 	],
-"creatorBuild": "25849",
+"creatorBuild": "25813",
 "files": {
 	"\/.gitignore": {
 		"ft": 8192,
@@ -15,29 +15,15 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
-	"\/build\/fonts\/GothamSSm-Bold.otf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/fonts\/GothamSSm-Bold.otf",
-		"oF": 0
-		},
-	"\/build\/fonts\/GothamSSm-Book.otf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/fonts\/GothamSSm-Book.otf",
-		"oF": 0
-		},
-	"\/build\/fonts\/GothamSSm-Light.otf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/fonts\/GothamSSm-Light.otf",
-		"oF": 0
-		},
-	"\/build\/fonts\/GothamSSm-Medium.otf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/fonts\/GothamSSm-Medium.otf",
-		"oF": 0
+	"\/build\/images\/community_banner.jpg": {
+		"ft": 16384,
+		"iS": 866041,
+		"oA": 0,
+		"oAP": "\/build\/images\/community_banner.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/build\/index.html": {
 		"ft": 8192,
@@ -68,7 +54,7 @@
 		"oA": 0,
 		"oAP": "\/build\/styles\/main-min.css",
 		"oF": 0,
-		"oS": 3
+		"oS": 0
 		},
 	"\/build\/styles\/main.css.map": {
 		"ft": 8192,
@@ -121,29 +107,11 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/src\/scripts\/vendors\/lity.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/src\/scripts\/vendors\/lity-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"\/src\/scripts\/vendors\/modernizr.custom.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/src\/scripts\/vendors\/modernizr.custom-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/src\/scripts\/vendors\/slick.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/src\/scripts\/vendors\/slick-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -4142,7 +4110,6 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
-	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",
