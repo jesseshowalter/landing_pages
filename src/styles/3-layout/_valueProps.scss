@@ -1,0 +1,51 @@
+#valueProps{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+.valueProp{
+  border:1px solid #efefef;
+  padding: 60px 20px;
+  border-radius: 3px;
+  position: relative;
+  //
+  // span{
+  //   content: "";
+  //   width: 30px;
+  //   height: 30px;
+  // }
+  //
+  // span.phone{
+  //   background:url("../images/ic-phone.svg") no-repeat;
+  //   background-size: contain;
+  //   position: absolute;
+  //   left: 45%;
+  //
+  // }
+  // span.keys{
+  //   background:url("../images/ic-keys.svg") no-repeat;
+  //   background-size: contain;
+  //   position: absolute;
+  //   left: 45%;
+  //
+  // }
+  // span.hands{
+  //   background:url("../images/ic-hands.svg") no-repeat;
+  //   background-size: contain;
+  //   position: absolute;
+  //   left: 45%;
+  //
+  // }
+
+  h4{
+    margin: 0;
+    font-size: 1em;
+  }
+
+
+  p{
+    font-size: 14px;
+    margin:0;
+  }
+}

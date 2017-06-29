@@ -21,3 +21,15 @@
   	bottom: 0;
   }
 }
+
+@mixin gradient {
+    background-color: #77e8b4;
+    /* IE9, iOS 3.2+ */
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIxMDAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjAlIj48c3RvcCBzdG9wLWNvbG9yPSIjOTllMDljIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiM1NWVmY2IiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
+    background-image: -webkit-gradient(linear, 100% 0%, 0% 0%,color-stop(0, rgb(153, 224, 156)),color-stop(1, rgb(85, 239, 203)));
+    /* Android 2.3 */
+    background-image: -webkit-linear-gradient(right,rgb(153, 224, 156) 0%,rgb(85, 239, 203) 100%);
+    /* IE10+ */
+    background-image: linear-gradient(to left,rgb(153, 224, 156) 0%,rgb(85, 239, 203) 100%);
+    background-image: -ms-linear-gradient(right,rgb(153, 224, 156) 0%,rgb(85, 239, 203) 100%);
+}

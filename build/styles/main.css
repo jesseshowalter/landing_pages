@@ -1,9 +1,3 @@
-html {
-  box-sizing: border-box; }
-
-*, *::after, *::before {
-  box-sizing: inherit; }
-
 /* Slider */
 .slick-slider {
   position: relative;
@@ -366,17 +360,13 @@ button.slick-prev, button.slick-next {
     animation-direction: alternate-reverse; }
 
 html {
-  background: red; }
+  background: white; }
 
 .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: auto; }
-  .container::after {
-    clear: both;
-    content: "";
-    display: block; }
+  text-align: center;
+  max-width: 800px;
+  overflow: auto;
+  margin: 0 auto; }
   @media (max-width: 1200px) {
     .container {
       padding: 0 30px; } }
@@ -390,12 +380,32 @@ a:link, a:visited {
 a:hover, a:active {
   color: #727272; }
 
-a.linkOut:after {
-  content: url(../images/linkOut.svg);
-  margin-left: 10px; }
-
 .clearFix {
   clear: both; }
+
+a.button {
+  background-color: #77e8b4;
+  /* IE9, iOS 3.2+ */
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIxMDAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjAlIj48c3RvcCBzdG9wLWNvbG9yPSIjOTllMDljIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiM1NWVmY2IiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
+  background-image: -webkit-gradient(linear, 100% 0%, 0% 0%, color-stop(0, #99e09c), color-stop(1, #55efcb));
+  /* Android 2.3 */
+  background-image: -webkit-linear-gradient(right, #99e09c 0%, #55efcb 100%);
+  /* IE10+ */
+  background-image: linear-gradient(to left, #99e09c 0%, #55efcb 100%);
+  background-image: -ms-linear-gradient(right, #99e09c 0%, #55efcb 100%);
+  padding: 15px 45px;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  display: table;
+  margin: 20px auto;
+  text-transform: uppercase;
+  font-family: "Gotham-Book", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  transition: all 0.15s ease-out 0s; }
+
+a.button:hover {
+  transform: scale(1.01) translatey(-1px);
+  box-shadow: 0 5px 7px rgba(153, 224, 156, 0.3); }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -445,13 +455,6 @@ table {
   border-spacing: 0; }
 
 @font-face {
-  font-family: 'Gotham-Light';
-  src: url("../fonts/GothamSSm-Light.otf");
-  /* IE9 Compat Modes */
-  src: url("../fonts/GothamSSm-Light.otf") format("embedded-opentype"), url("../fonts/GothamSSm-Light.otf") format("woff2"), url("../fonts/GothamSSm-Light.otf") format("woff"), url("../fonts/GothamSSm-Light.otf") format("truetype"), url("../fonts/GothamSSm-Light.otf") format("svg");
-  /* Legacy iOS */ }
-
-@font-face {
   font-family: 'Gotham-Book';
   src: url("../fonts/GothamSSm-Book.otf");
   /* IE9 Compat Modes */
@@ -476,18 +479,20 @@ body {
   background-color: white;
   line-height: 1.45;
   color: #333;
-  font-family: "Gotham-Light", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "Gotham-Book", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   text-rendering: optimizeLegibility; }
 
 p {
+  font-size: 16px;
   margin-bottom: 1.3em;
-  color: #727272;
+  color: #303030;
   line-height: 2; }
 
 h1, h2, h3, h4, h5 {
   margin: 1.414em 0 0.5em;
   line-height: 1.65;
-  font-family: "Gotham-Medium", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  text-transform: uppercase;
+  font-family: "Gotham-Bold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
   @media (max-width: 768px) {
     h1, h2, h3, h4, h5 {
       line-height: 1.4em; } }
@@ -579,16 +584,6 @@ strong {
   align-items: center;
   justify-content: center;
   position: relative; }
-  #hero:after {
-    content: "";
-    width: 50%;
-    height: auto;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0; }
   #hero #logo {
     background: url("../images/logo_white.svg") no-repeat;
     background-size: contain;
@@ -607,3 +602,34 @@ strong {
     margin: 0;
     text-transform: uppercase;
     font-family: "Gotham-Bold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  #hero h1 {
+    line-height: 1.2em;
+    margin: 10px 0; }
+  #hero h2 {
+    font-size: 20px; }
+
+#about {
+  max-width: 675px; }
+  #about h3 {
+    margin-top: 80px; }
+  #about .button {
+    margin: 90px auto; }
+
+#valueProps {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px; }
+
+.valueProp {
+  border: 1px solid #efefef;
+  padding: 60px 20px;
+  border-radius: 3px;
+  position: relative; }
+  .valueProp h4 {
+    margin: 0;
+    font-size: 1em; }
+  .valueProp p {
+    font-size: 14px;
+    margin: 0; }
+
+/*# sourceMappingURL=main.css.map */
