@@ -366,7 +366,7 @@ button.slick-prev, button.slick-next {
     animation-direction: alternate-reverse; }
 
 html {
-  background: white; }
+  background: red; }
 
 .container {
   max-width: 1200px;
