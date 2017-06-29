@@ -7,3 +7,17 @@
 @mixin transition15{
   transition: (all 0.15s ease-out 0s);
 }
+
+@mixin dark-overlay{
+  &:after{
+    content: "";
+    width: 50%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+  	right: 0;
+  	left: 0;
+  	bottom: 0;
+  }
+}
