@@ -367,9 +367,6 @@ html {
   max-width: 800px;
   overflow: auto;
   margin: 0 auto; }
-  @media (max-width: 1200px) {
-    .container {
-      padding: 0 30px; } }
   .container img {
     max-width: 100%; }
 
@@ -618,7 +615,9 @@ strong {
 #valueProps {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 20px; }
+  grid-column-gap: 20px;
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 100px; }
 
 .valueProp {
   border: 1px solid #efefef;
@@ -631,5 +630,43 @@ strong {
   .valueProp p {
     font-size: 14px;
     margin: 0; }
+
+#textApp {
+  margin-top: 100px;
+  height: 380px;
+  overflow: hidden;
+  position: relative; }
+
+.phone1, .phone2 {
+  position: absolute; }
+
+.phone1 {
+  background: url("../images/phoneApple.png") no-repeat;
+  background-size: contain;
+  width: 210px;
+  height: 453px; }
+
+.phone2 {
+  background: url("../images/phoneAndroid.png") no-repeat;
+  background-size: contain;
+  width: 180px;
+  height: 394px;
+  top: 40px;
+  left: 150px; }
+
+.textForm {
+  text-align: left;
+  width: 55%;
+  position: absolute;
+  right: 0;
+  top: 40px; }
+
+#footer {
+  background: #3c4854;
+  position: relative; }
+  #footer p {
+    color: white;
+    padding: 40px;
+    text-align: left; }
 
 /*# sourceMappingURL=main.css.map */

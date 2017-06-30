@@ -1,0 +1,37 @@
+#textApp{
+  margin-top:100px;
+  height: 380px;
+  overflow: hidden;
+  position: relative;
+}
+
+.phoneExamples{
+
+}
+
+.phone1, .phone2{
+  position: absolute;
+}
+
+.phone1{
+  background: url("../images/phoneApple.png") no-repeat;
+  background-size: contain;
+  width:210px;
+  height:453px;
+}
+.phone2{
+  background: url("../images/phoneAndroid.png") no-repeat;
+  background-size: contain;
+  width:180px;
+  height:394px;
+  top: 40px;
+  left: 150px;
+}
+
+.textForm{
+  text-align: left;
+  width: 55%;
+  position: absolute;
+  right:0;
+  top: 40px;
+}
