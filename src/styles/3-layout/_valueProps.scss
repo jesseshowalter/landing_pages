@@ -19,15 +19,36 @@
   @media (max-width: $breakpoint-tablet) {
     padding: 20px
   }
+  @media (max-width: $breakpoint-mobile) {
+    text-align: left;
+  }
+
+  .icon{
+    @media (max-width: $breakpoint-mobile) {
+      float: left;
+      margin-top: 19px;
+      margin-left: 10px;
+    }
+  }
 
   h4{
     margin: 0;
     font-size: 1em;
+    @media (max-width: $breakpoint-mobile) {
+      float: right;
+      width: 70%;
+      float: right;
+    }
   }
 
 
   p{
     font-size: 14px;
     margin:0;
+    @media (max-width: $breakpoint-mobile) {
+      float: right;
+      width: 70%;
+      float: right;
+    }
   }
 }

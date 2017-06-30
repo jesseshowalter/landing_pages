@@ -523,16 +523,16 @@ h2 {
       font-size: 2em; } }
   @media (max-width: 400px) {
     h2 {
-      font-size: 1.5em; } }
+      font-size: 1.6em; } }
 
 h3 {
   font-size: 1.999em; }
   @media (max-width: 768px) {
     h3 {
-      font-size: 1.3em; } }
+      font-size: 1.5em; } }
   @media (max-width: 400px) {
     h3 {
-      font-size: 1.2em; } }
+      font-size: 1.4em; } }
 
 h4 {
   font-size: 1.414em; }
@@ -668,12 +668,30 @@ strong {
   @media (max-width: 768px) {
     .valueProp {
       padding: 20px; } }
+  @media (max-width: 400px) {
+    .valueProp {
+      text-align: left; } }
+  @media (max-width: 400px) {
+    .valueProp .icon {
+      float: left;
+      margin-top: 19px;
+      margin-left: 10px; } }
   .valueProp h4 {
     margin: 0;
     font-size: 1em; }
+    @media (max-width: 400px) {
+      .valueProp h4 {
+        float: right;
+        width: 70%;
+        float: right; } }
   .valueProp p {
     font-size: 14px;
     margin: 0; }
+    @media (max-width: 400px) {
+      .valueProp p {
+        float: right;
+        width: 70%;
+        float: right; } }
 
 #textApp {
   margin-top: 100px;
@@ -756,5 +774,3 @@ strong {
     color: white;
     padding: 40px;
     text-align: left; }
-
-/*# sourceMappingURL=main.css.map */
