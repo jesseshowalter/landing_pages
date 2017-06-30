@@ -9,7 +9,7 @@
   justify-content:center;
   position: relative;
   @media (max-width: $breakpoint-mobile) {
-    height: 350px;
+    height: 250px;
   }
 
   .button{
@@ -38,6 +38,9 @@
   .content{
     width:70%;
     max-width:900px;
+    @media (max-width: $breakpoint-mobile) {
+      width:100%;
+    }
   }
   h1, h2{
     padding:0;

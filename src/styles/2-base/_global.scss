@@ -9,7 +9,7 @@ html{
   margin: 0 auto;
 
   @media (max-width: $breakpoint-tablet) {
-		padding: 0 30px;
+		padding: 0 20px;
 	}
 
   img{
@@ -40,6 +40,7 @@ a:hover, a:active{
   @include transition15;
   @media (max-width: $breakpoint-mobile) {
     font-size: 14px;
+    display: block;
   }
 }
 .button:hover{

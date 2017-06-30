@@ -369,7 +369,7 @@ html {
   margin: 0 auto; }
   @media (max-width: 768px) {
     .container {
-      padding: 0 30px; } }
+      padding: 0 20px; } }
   .container img {
     max-width: 100%; }
 
@@ -404,7 +404,8 @@ a:hover, a:active {
   transition: all 0.15s ease-out 0s; }
   @media (max-width: 400px) {
     .button {
-      font-size: 14px; } }
+      font-size: 14px;
+      display: block; } }
 
 .button:hover {
   transform: scale(1.01) translatey(-1px);
@@ -594,7 +595,7 @@ strong {
   position: relative; }
   @media (max-width: 400px) {
     #hero {
-      height: 350px; } }
+      height: 250px; } }
   @media (max-width: 400px) {
     #hero .button {
       display: none; } }
@@ -616,6 +617,9 @@ strong {
   #hero .content {
     width: 70%;
     max-width: 900px; }
+    @media (max-width: 400px) {
+      #hero .content {
+        width: 100%; } }
   #hero h1, #hero h2 {
     padding: 0;
     margin: 0;
@@ -635,11 +639,14 @@ strong {
   max-width: 675px; }
   #about h3 {
     margin-top: 80px; }
+    @media (max-width: 768px) {
+      #about h3 {
+        margin-top: 40px; } }
   #about .button {
     margin: 90px auto; }
     @media (max-width: 768px) {
       #about .button {
-        margin: 60px auto; } }
+        margin: 40px auto; } }
 
 #valueProps {
   display: grid;
@@ -647,12 +654,20 @@ strong {
   grid-column-gap: 20px;
   border-bottom: 1px solid #efefef;
   padding-bottom: 100px; }
+  @media (max-width: 768px) {
+    #valueProps {
+      grid-template-columns: 1fr;
+      grid-row-gap: 20px;
+      padding-bottom: 50px; } }
 
 .valueProp {
   border: 1px solid #efefef;
   padding: 60px 20px;
   border-radius: 3px;
   position: relative; }
+  @media (max-width: 768px) {
+    .valueProp {
+      padding: 20px; } }
   .valueProp h4 {
     margin: 0;
     font-size: 1em; }
@@ -665,17 +680,20 @@ strong {
   height: 380px;
   overflow: hidden;
   position: relative; }
+  @media (max-width: 768px) {
+    #textApp {
+      margin-top: 50px; } }
 
-.phone1, .phone2 {
+.phoneExamples .phone1, .phoneExamples .phone2 {
   position: absolute; }
 
-.phone1 {
+.phoneExamples .phone1 {
   background: url("../images/phoneApple.png") no-repeat;
   background-size: contain;
   width: 210px;
   height: 453px; }
 
-.phone2 {
+.phoneExamples .phone2 {
   background: url("../images/phoneAndroid.png") no-repeat;
   background-size: contain;
   width: 180px;
@@ -689,53 +707,47 @@ strong {
   position: absolute;
   right: 0;
   top: 0; }
-
-fieldset {
-  position: relative; }
-
-input {
-  position: absolute; }
-
-input[type=tel] {
-  background: #fff;
-  border: 1px solid #CCC;
-  border-radius: 8px;
-  width: 300px;
-  padding: 20px 30px;
-  font-size: initial;
-  top: 0;
-  color: #000; }
-
-input[type=tel]::placeholder {
-  color: #BFBFBF;
-  font-family: "Gotham-Book", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
-
-input[type=submit] {
-  background-color: #77e8b4;
-  /* IE9, iOS 3.2+ */
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIxMDAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjAlIj48c3RvcCBzdG9wLWNvbG9yPSIjOTllMDljIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiM1NWVmY2IiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
-  background-image: -webkit-gradient(linear, 100% 0%, 0% 0%, color-stop(0, #99e09c), color-stop(1, #55efcb));
-  /* Android 2.3 */
-  background-image: -webkit-linear-gradient(right, #99e09c 0%, #55efcb 100%);
-  /* IE10+ */
-  background-image: linear-gradient(to left, #99e09c 0%, #55efcb 100%);
-  background-image: -ms-linear-gradient(right, #99e09c 0%, #55efcb 100%);
-  margin: 0;
-  padding: 21px 15px;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border: none;
-  font-size: initial;
-  color: #FFF;
-  -webkit-appearance: none !important;
-  left: 250px;
-  top: 0; }
-
-.mobileBadge {
-  display: inline-block;
-  margin-top: 100px; }
+  .textForm fieldset {
+    position: relative; }
+  .textForm input {
+    position: absolute; }
+  .textForm input[type=tel] {
+    background: #fff;
+    border: 1px solid #CCC;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px 30px;
+    font-size: initial;
+    top: 0;
+    color: #000; }
+  .textForm input[type=tel]::placeholder {
+    color: #BFBFBF;
+    font-family: "Gotham-Book", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  .textForm input[type=submit] {
+    background-color: #77e8b4;
+    /* IE9, iOS 3.2+ */
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIxMDAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjAlIj48c3RvcCBzdG9wLWNvbG9yPSIjOTllMDljIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiM1NWVmY2IiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
+    background-image: -webkit-gradient(linear, 100% 0%, 0% 0%, color-stop(0, #99e09c), color-stop(1, #55efcb));
+    /* Android 2.3 */
+    background-image: -webkit-linear-gradient(right, #99e09c 0%, #55efcb 100%);
+    /* IE10+ */
+    background-image: linear-gradient(to left, #99e09c 0%, #55efcb 100%);
+    background-image: -ms-linear-gradient(right, #99e09c 0%, #55efcb 100%);
+    margin: 0;
+    padding: 21px 15px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: none;
+    font-size: initial;
+    color: #FFF;
+    -webkit-appearance: none !important;
+    left: 250px;
+    top: 0; }
+  .textForm .mobileBadge {
+    display: inline-block;
+    margin-top: 100px; }
 
 #footer {
   background: #3c4854;

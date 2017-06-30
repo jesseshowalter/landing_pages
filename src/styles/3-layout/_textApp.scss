@@ -3,30 +3,32 @@
   height: 380px;
   overflow: hidden;
   position: relative;
+    @media (max-width: $breakpoint-tablet) {
+      margin-top:50px;
+    }
 }
 
 .phoneExamples{
+  .phone1, .phone2{
+    position: absolute;
+  }
 
+  .phone1{
+    background: url("../images/phoneApple.png") no-repeat;
+    background-size: contain;
+    width:210px;
+    height:453px;
+  }
+  .phone2{
+    background: url("../images/phoneAndroid.png") no-repeat;
+    background-size: contain;
+    width:180px;
+    height:394px;
+    top: 40px;
+    left: 150px;
+  }
 }
 
-.phone1, .phone2{
-  position: absolute;
-}
-
-.phone1{
-  background: url("../images/phoneApple.png") no-repeat;
-  background-size: contain;
-  width:210px;
-  height:453px;
-}
-.phone2{
-  background: url("../images/phoneAndroid.png") no-repeat;
-  background-size: contain;
-  width:180px;
-  height:394px;
-  top: 40px;
-  left: 150px;
-}
 
 .textForm{
   text-align: left;
@@ -34,48 +36,48 @@
   position: absolute;
   right:0;
   top: 0;
-}
 
-fieldset{
-  position: relative;
-}
-input{
-  position: absolute;
-}
+  fieldset{
+    position: relative;
+  }
+  input{
+    position: absolute;
+  }
 
-input[type=tel]{
-  background: #fff;
-  border: 1px solid #CCC;
-  border-radius: 8px;
-  width:300px;
-  padding: 20px 30px;
-  font-size: initial;
-  top:0;
-  color: #000;
-}
+  input[type=tel]{
+    background: #fff;
+    border: 1px solid #CCC;
+    border-radius: 8px;
+    width:300px;
+    padding: 20px 30px;
+    font-size: initial;
+    top:0;
+    color: #000;
+  }
 
-input[type=tel]::placeholder {
-  color: #BFBFBF;
-  font-family: $font-book;
-}
+  input[type=tel]::placeholder {
+    color: #BFBFBF;
+    font-family: $font-book;
+  }
 
-input[type=submit]{
-  @include gradient;
-  margin:0;
-  padding:21px 15px;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border: none;
-  font-size: initial;
-  color: #FFF;
-  -webkit-appearance: none !important;
-  left:250px;
-  top: 0;
-}
+  input[type=submit]{
+    @include gradient;
+    margin:0;
+    padding:21px 15px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: none;
+    font-size: initial;
+    color: #FFF;
+    -webkit-appearance: none !important;
+    left:250px;
+    top: 0;
+  }
 
-.mobileBadge{
-  display: inline-block;
-  margin-top:100px;
+  .mobileBadge{
+    display: inline-block;
+    margin-top:100px;
+  }
 }
