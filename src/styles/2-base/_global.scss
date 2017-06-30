@@ -8,9 +8,9 @@ html{
   overflow: auto;
   margin: 0 auto;
 
-  // @media (max-width: $breakpoint-desktop) {
-	// 	padding: 0 30px;
-	// }
+  @media (max-width: $breakpoint-tablet) {
+		padding: 0 30px;
+	}
 
   img{
     max-width: 100%; // temp style, remove after
@@ -38,6 +38,9 @@ a:hover, a:active{
   text-transform: uppercase;
   font-family: $font-book;
   @include transition15;
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 14px;
+  }
 }
 .button:hover{
   transform: scale(1.01) translatey(-1px);

@@ -367,6 +367,9 @@ html {
   max-width: 800px;
   overflow: auto;
   margin: 0 auto; }
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 30px; } }
   .container img {
     max-width: 100%; }
 
@@ -399,6 +402,9 @@ a:hover, a:active {
   text-transform: uppercase;
   font-family: "Gotham-Book", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   transition: all 0.15s ease-out 0s; }
+  @media (max-width: 400px) {
+    .button {
+      font-size: 14px; } }
 
 .button:hover {
   transform: scale(1.01) translatey(-1px);
@@ -504,19 +510,19 @@ h1 {
   font-size: 3.998em; }
   @media (max-width: 768px) {
     h1 {
-      font-size: 3em; } }
+      font-size: 2.8em; } }
   @media (max-width: 400px) {
     h1 {
-      font-size: 2.4em; } }
+      font-size: 2.2em; } }
 
 h2 {
   font-size: 2.827em; }
   @media (max-width: 768px) {
     h2 {
-      font-size: 2.2em; } }
+      font-size: 2em; } }
   @media (max-width: 400px) {
     h2 {
-      font-size: 1.6em; } }
+      font-size: 1.5em; } }
 
 h3 {
   font-size: 1.999em; }
@@ -586,6 +592,12 @@ strong {
   align-items: center;
   justify-content: center;
   position: relative; }
+  @media (max-width: 400px) {
+    #hero {
+      height: 350px; } }
+  @media (max-width: 400px) {
+    #hero .button {
+      display: none; } }
   #hero #logo {
     background: url("../images/logo_white.svg") no-repeat;
     background-size: contain;
@@ -594,6 +606,11 @@ strong {
     height: 40px;
     top: 20px;
     right: 20px; }
+    @media (max-width: 400px) {
+      #hero #logo {
+        width: 80px;
+        left: 50%;
+        margin-left: -40px; } }
   #hero #logo span {
     display: none; }
   #hero .content {
@@ -609,6 +626,10 @@ strong {
     margin: 10px 0; }
   #hero h2 {
     font-size: 20px; }
+    @media (max-width: 400px) {
+      #hero h2 {
+        font-size: 14px;
+        margin-top: 40px; } }
 
 #about {
   max-width: 675px; }
@@ -616,6 +637,9 @@ strong {
     margin-top: 80px; }
   #about .button {
     margin: 90px auto; }
+    @media (max-width: 768px) {
+      #about .button {
+        margin: 60px auto; } }
 
 #valueProps {
   display: grid;
