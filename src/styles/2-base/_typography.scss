@@ -1,14 +1,4 @@
 @font-face {
-font-family: 'Gotham-Light';
-src: url('../fonts/GothamSSm-Light.otf'); /* IE9 Compat Modes */
-src: url('../fonts/GothamSSm-Light.otf') format('embedded-opentype'), /* IE6-IE8 */
-     url('../fonts/GothamSSm-Light.otf') format('woff2'), /* Super Modern Browsers */
-     url('../fonts/GothamSSm-Light.otf') format('woff'), /* Pretty Modern Browsers */
-     url('../fonts/GothamSSm-Light.otf')  format('truetype'), /* Safari, Android, iOS */
-     url('../fonts/GothamSSm-Light.otf') format('svg'); /* Legacy iOS */
-}
-
-@font-face {
 font-family: 'Gotham-Book';
 src: url('../fonts/GothamSSm-Book.otf'); /* IE9 Compat Modes */
 src: url('../fonts/GothamSSm-Book.otf') format('embedded-opentype'), /* IE6-IE8 */
@@ -40,20 +30,22 @@ body {
   background-color: white;
   line-height: 1.45;
   color: #333;
-  font-family: $font-light;
+  font-family: $font-book;
   text-rendering: optimizeLegibility;
 }
 
 p {
+  font-size: 16px;
   margin-bottom: 1.3em;
-  color: $coal;
+  color: $mineShaft;
   line-height: 2;
 }
 
 h1, h2, h3, h4, h5 {
   margin: 1.414em 0 0.5em;
   line-height: 1.65;
-  font-family: $font-medium;
+  text-transform: uppercase;
+  font-family: $font-bold;
   @media (max-width: $breakpoint-tablet) {
     line-height: 1.4em;
   }
