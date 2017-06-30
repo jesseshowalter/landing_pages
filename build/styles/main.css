@@ -371,7 +371,7 @@ html {
     max-width: 100%; }
 
 a:link, a:visited {
-  color: #4FE3C0;
+  color: white;
   transition: all 0.15s ease-out 0s; }
 
 a:hover, a:active {
@@ -380,7 +380,7 @@ a:hover, a:active {
 .clearFix {
   clear: both; }
 
-a.button {
+.button {
   background-color: #77e8b4;
   /* IE9, iOS 3.2+ */
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIxMDAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjAlIj48c3RvcCBzdG9wLWNvbG9yPSIjOTllMDljIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiM1NWVmY2IiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
@@ -400,9 +400,14 @@ a.button {
   font-family: "Gotham-Book", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   transition: all 0.15s ease-out 0s; }
 
-a.button:hover {
+.button:hover {
   transform: scale(1.01) translatey(-1px);
-  box-shadow: 0 5px 7px rgba(153, 224, 156, 0.3); }
+  box-shadow: 0 5px 7px rgba(153, 224, 156, 0.3);
+  color: white;
+  cursor: pointer; }
+
+*:focus {
+  outline: none; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -660,6 +665,49 @@ strong {
   position: absolute;
   right: 0;
   top: 40px; }
+
+fieldset {
+  position: relative; }
+
+input {
+  position: absolute; }
+
+input[type=tel] {
+  background: #fff;
+  border: 1px solid #CCC;
+  border-radius: 8px;
+  width: 300px;
+  padding: 20px 30px;
+  font-size: initial;
+  top: 0;
+  color: #000; }
+
+input[type=tel]::placeholder {
+  color: #BFBFBF;
+  font-family: "Gotham-Book", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+
+input[type=submit] {
+  background-color: #77e8b4;
+  /* IE9, iOS 3.2+ */
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIxMDAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjAlIj48c3RvcCBzdG9wLWNvbG9yPSIjOTllMDljIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiM1NWVmY2IiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
+  background-image: -webkit-gradient(linear, 100% 0%, 0% 0%, color-stop(0, #99e09c), color-stop(1, #55efcb));
+  /* Android 2.3 */
+  background-image: -webkit-linear-gradient(right, #99e09c 0%, #55efcb 100%);
+  /* IE10+ */
+  background-image: linear-gradient(to left, #99e09c 0%, #55efcb 100%);
+  background-image: -ms-linear-gradient(right, #99e09c 0%, #55efcb 100%);
+  margin: 0;
+  padding: 21px 15px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border: none;
+  font-size: initial;
+  color: #FFF;
+  -webkit-appearance: none !important;
+  left: 250px;
+  top: 0; }
 
 #footer {
   background: #3c4854;
