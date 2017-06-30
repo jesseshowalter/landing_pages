@@ -49,6 +49,7 @@
     </section>
 
     <section id="textApp" class="container">
+
       <div class="phoneExamples">
         <div class="phone1"></div>
         <div class="phone2"></div>
@@ -57,13 +58,24 @@
       <div class="textForm">
         <h4>A community in your pocket</h4>
         <p>Get our free iOS or Android App to be a part of the {Tricia Miranda} community.</p>
-        <fieldset>
-          <input type="tel" name="phone" id="phone" value="" placeholder="Phone Number">
-          <input class="button" type="submit" value="Text Me The App">
-        </fieldset>
+
+        <form action="" method="GET">
+          <div class="Field">
+            <input
+              type="tel"
+              name="search"
+              placeholder="Phone Number"
+              class="textApp-query"/>
+
+            <button
+              type="submit"
+              class="button">Text me the app</button>
+          </div>
+        </form>
         <a href="#" class="mobileBadge apple"><img src="images/badge_apple.svg" alt=""></a>
         <a href="#" class="mobileBadge android"><img src="images/badge_android.svg" alt=""></a>
       </div>
+
     </section>
 
     <footer id="footer">

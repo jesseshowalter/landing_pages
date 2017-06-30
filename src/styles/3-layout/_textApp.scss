@@ -1,17 +1,28 @@
 #textApp{
   margin-top:100px;
-  height: 380px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   overflow: hidden;
-  position: relative;
-    @media (max-width: $breakpoint-tablet) {
-      margin-top:50px;
-    }
+  text-align: left;
+  @media (max-width: $breakpoint-tablet) {
+    flex-direction: column-reverse;
+    margin-top:50px;
+  }
+
+  h4{
+    margin-top: 0;
+  }
 }
 
+////////////////////////////////
 .phoneExamples{
+  position: relative;
+
   .phone1, .phone2{
-    position: absolute;
+    // position: absolute;
   }
+
 
   .phone1{
     background: url("../images/phoneApple.png") no-repeat;
@@ -29,55 +40,71 @@
   }
 }
 
+////////////////////////////////
 
 .textForm{
-  text-align: left;
-  width: 55%;
-  position: absolute;
-  right:0;
-  top: 0;
+  max-width:60%;
+  @media (max-width: $breakpoint-tablet) {
+    max-width: 85%;
+    text-align: center;
+  }
+}
 
-  fieldset{
-    position: relative;
-  }
-  input{
-    position: absolute;
-  }
+/* LAYOUT */
+.Field {
+  display: flex;
+}
 
-  input[type=tel]{
-    background: #fff;
-    border: 1px solid #CCC;
-    border-radius: 8px;
-    width:300px;
-    padding: 20px 30px;
-    font-size: initial;
-    top:0;
-    color: #000;
-  }
+.textApp-query {
+  flex: 1 0 8em;
+}
 
-  input[type=tel]::placeholder {
-    color: #BFBFBF;
-    font-family: $font-book;
-  }
+.textApp-submitBtn {
+  flex: 0 0 auto;
+}
 
-  input[type=submit]{
-    @include gradient;
-    margin:0;
-    padding:21px 15px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border: none;
-    font-size: initial;
-    color: #FFF;
-    -webkit-appearance: none !important;
-    left:250px;
-    top: 0;
-  }
 
-  .mobileBadge{
-    display: inline-block;
-    margin-top:100px;
+
+.textApp-query:focus {
+  background: white;
+}
+
+input[type=tel]{
+  background: #fff;
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+  border-left: 1px solid #CCC;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 20px 30px;
+  font-size: initial;
+  color: #BFBFBF;
+  font-family: $font-book;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+button[type=submit]{
+  @include gradient;
+  margin:0;
+  padding:21px 15px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border: none;
+  font-size: initial;
+  color: #FFF;
+  -webkit-appearance: none !important;
+  @media (max-width: $breakpoint-tablet) {
+    font-size: 14px;
   }
+}
+
+.mobileBadge{
+  display: inline-block;
+  margin:30px 10px 0;
 }
