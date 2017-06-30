@@ -8,6 +8,15 @@
   align-items:center;
   justify-content:center;
   position: relative;
+  @media (max-width: $breakpoint-mobile) {
+    height: 250px;
+  }
+
+  .button{
+    @media (max-width: $breakpoint-mobile) {
+      display: none;
+    }
+  }
 
   #logo{
     background: url("../images/logo_white.svg") no-repeat;
@@ -17,6 +26,11 @@
     height: 40px;
     top:20px;
     right:20px;
+    @media (max-width: $breakpoint-mobile) {
+      width:80px;
+      left:50%;
+      margin-left:-40px;
+    }
   }
   #logo span {
     display: none;
@@ -24,6 +38,9 @@
   .content{
     width:70%;
     max-width:900px;
+    @media (max-width: $breakpoint-mobile) {
+      width:100%;
+    }
   }
   h1, h2{
     padding:0;
@@ -37,5 +54,9 @@
   }
   h2{
     font-size: 20px;
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 14px;
+      margin-top:40px;
+    }
   }
 }
