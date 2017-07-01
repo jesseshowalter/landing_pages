@@ -66,6 +66,16 @@
 		"oAP": "\/build\/images\/community_banner.jpg",
 		"oF": 0,
 		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/build\/images\/community_banner_blur.jpg": {
+		"ft": 16384,
+		"iS": 866041,
+		"oA": 0,
+		"oAP": "\/build\/images\/community_banner_blur.jpg",
+		"oF": 0,
+		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
