@@ -1,6 +1,7 @@
 #hero{
-  background: url('../images/community_banner_blur.jpg') no-repeat center;
-  background-size: cover;
+  // background: url('../images/community_banner.jpg') no-repeat center;
+  // background-size: cover;
+  background: #000;
   height:600px;
   text-align: center;
   color:white;
@@ -8,14 +9,16 @@
   align-items:center;
   justify-content:center;
   position: relative;
+  overflow: hidden;
   @media (max-width: $breakpoint-mobile) {
-    height: 250px;
+    height: 400px;
+    padding: 0 20px;
   }
 
   .button{
-    @media (max-width: $breakpoint-mobile) {
-      display: none;
-    }
+    // @media (max-width: $breakpoint-mobile) {
+    //   display: inline-block;
+    // }
   }
 
   #logo{
@@ -26,6 +29,7 @@
     height: 40px;
     top:20px;
     right:20px;
+    z-index: 9999;
     @media (max-width: $breakpoint-mobile) {
       width:80px;
       left:50%;
@@ -38,6 +42,7 @@
   .content{
     width:70%;
     max-width:900px;
+    z-index: 9999;
     @media (max-width: $breakpoint-mobile) {
       width:100%;
     }
@@ -59,4 +64,22 @@
       margin-top:40px;
     }
   }
+
+  .blur {
+    overflow: hidden;
+    margin: -5px -10px 0px;
+    background: #000 url('../images/community_banner.jpg') no-repeat center;
+    content: " ";
+    background-size:cover;
+    -webkit-filter: blur(13px);
+    -moz-filter: blur(13px);
+    -o-filter: blur(13px);
+    -ms-filter: blur(13px);
+    filter: blur(13px);
+    position:absolute;
+    width:105%;
+    height:105%;
+    z-index: 0;
+    opacity: 0.5;
+}
 }

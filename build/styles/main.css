@@ -405,7 +405,8 @@ a:hover, a:active {
   @media (max-width: 400px) {
     .button {
       font-size: 14px;
-      display: block; } }
+      display: block;
+      padding: 15px 25px; } }
 
 .button:hover {
   transform: scale(1.01) translatey(-1px);
@@ -584,21 +585,19 @@ strong {
   font-family: "Gotham-Bold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
 
 #hero {
-  background: url("../images/community_banner_blur.jpg") no-repeat center;
-  background-size: cover;
+  background: #000;
   height: 600px;
   text-align: center;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   @media (max-width: 400px) {
     #hero {
-      height: 250px; } }
-  @media (max-width: 400px) {
-    #hero .button {
-      display: none; } }
+      height: 400px;
+      padding: 0 20px; } }
   #hero #logo {
     background: url("../images/logo_white.svg") no-repeat;
     background-size: contain;
@@ -606,7 +605,8 @@ strong {
     width: 140px;
     height: 40px;
     top: 20px;
-    right: 20px; }
+    right: 20px;
+    z-index: 9999; }
     @media (max-width: 400px) {
       #hero #logo {
         width: 80px;
@@ -616,7 +616,8 @@ strong {
     display: none; }
   #hero .content {
     width: 70%;
-    max-width: 900px; }
+    max-width: 900px;
+    z-index: 9999; }
     @media (max-width: 400px) {
       #hero .content {
         width: 100%; } }
@@ -634,6 +635,22 @@ strong {
       #hero h2 {
         font-size: 14px;
         margin-top: 40px; } }
+  #hero .blur {
+    overflow: hidden;
+    margin: -5px -10px 0px;
+    background: #000 url("../images/community_banner.jpg") no-repeat center;
+    content: " ";
+    background-size: cover;
+    -webkit-filter: blur(13px);
+    -moz-filter: blur(13px);
+    -o-filter: blur(13px);
+    -ms-filter: blur(13px);
+    filter: blur(13px);
+    position: absolute;
+    width: 105%;
+    height: 105%;
+    z-index: 0;
+    opacity: 0.5; }
 
 #about {
   max-width: 675px; }
