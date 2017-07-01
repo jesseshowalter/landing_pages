@@ -69,6 +69,16 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/build\/images\/community_banner_blur.jpg": {
+		"ft": 16384,
+		"iS": 866041,
+		"oA": 0,
+		"oAP": "\/build\/images\/community_banner_blur.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/build\/images\/ic-hands.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -128,6 +138,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/build\/images\/phones.png": {
+		"ft": 32768,
+		"iS": 482339,
+		"oA": 0,
+		"oAP": "\/build\/images\/phones.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
