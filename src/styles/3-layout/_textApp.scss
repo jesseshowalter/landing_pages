@@ -1,5 +1,6 @@
 #textApp{
-  margin-top:100px;
+  height: 500px;
+  // margin-top:100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,6 +8,8 @@
   text-align: left;
   @media (max-width: $breakpoint-tablet) {
     flex-direction: column-reverse;
+    margin-top:0px;
+    height: auto;
     margin-top:50px;
   }
 
@@ -17,26 +20,29 @@
 
 ////////////////////////////////
 .phoneExamples{
+  background: url("../images/phones.png") no-repeat;
+  background-size: contain;
+  width:75%;
+  height:475px;
+  margin-bottom:-180px;
   position: relative;
-
-  .phone1, .phone2{
-    // position: absolute;
+    @media (max-width: $breakpoint-tablet) {
+      display:none;
+    }
+  img{
+    position:absolute;
   }
-
-
-  .phone1{
-    background: url("../images/phoneApple.png") no-repeat;
-    background-size: contain;
-    width:210px;
-    height:453px;
+  img.apple{
+    height:128px;
+    left:0px;
+    top:87px;
+    clip: rect(10px, 164px, 128px, 13px);
   }
-  .phone2{
-    background: url("../images/phoneAndroid.png") no-repeat;
-    background-size: contain;
-    width:180px;
-    height:394px;
-    top: 40px;
-    left: 150px;
+  img.android{
+    height:120px;
+    left:150px;
+    top:100px;
+    clip: rect(10px, 205px, 115px, 23px);
   }
 }
 
@@ -47,6 +53,7 @@
   @media (max-width: $breakpoint-tablet) {
     max-width: 85%;
     text-align: center;
+    margin-bottom: 60px;
   }
 }
 
@@ -86,6 +93,11 @@ input[type=tel]{
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+input[type=tel]::placeholder {
+  color: #BFBFBF;
+  font-family: $font-book;
+}
+
 
 button[type=submit]{
   @include gradient;
@@ -106,5 +118,8 @@ button[type=submit]{
 
 .mobileBadge{
   display: inline-block;
-  margin:30px 10px 0;
+  margin: 30px 20px 0 0;
+  @media (max-width: $breakpoint-tablet) {
+    margin:30px 8px 0;
+  }
 }

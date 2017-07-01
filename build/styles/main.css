@@ -364,7 +364,7 @@ html {
 
 .container {
   text-align: center;
-  max-width: 800px;
+  max-width: 900px;
   overflow: auto;
   margin: 0 auto; }
   @media (max-width: 768px) {
@@ -584,7 +584,7 @@ strong {
   font-family: "Gotham-Bold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
 
 #hero {
-  background: url("../images/community_banner.jpg") no-repeat center;
+  background: url("../images/community_banner_blur.jpg") no-repeat center;
   background-size: cover;
   height: 600px;
   text-align: center;
@@ -694,7 +694,7 @@ strong {
         float: right; } }
 
 #textApp {
-  margin-top: 100px;
+  height: 500px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -703,31 +703,42 @@ strong {
   @media (max-width: 768px) {
     #textApp {
       flex-direction: column-reverse;
+      margin-top: 0px;
+      height: auto;
       margin-top: 50px; } }
   #textApp h4 {
     margin-top: 0; }
 
 .phoneExamples {
+  background: url("../images/phones.png") no-repeat;
+  background-size: contain;
+  width: 75%;
+  height: 475px;
+  margin-bottom: -180px;
   position: relative; }
-  .phoneExamples .phone1 {
-    background: url("../images/phoneApple.png") no-repeat;
-    background-size: contain;
-    width: 210px;
-    height: 453px; }
-  .phoneExamples .phone2 {
-    background: url("../images/phoneAndroid.png") no-repeat;
-    background-size: contain;
-    width: 180px;
-    height: 394px;
-    top: 40px;
-    left: 150px; }
+  @media (max-width: 768px) {
+    .phoneExamples {
+      display: none; } }
+  .phoneExamples img {
+    position: absolute; }
+  .phoneExamples img.apple {
+    height: 128px;
+    left: 0px;
+    top: 87px;
+    clip: rect(10px, 164px, 128px, 13px); }
+  .phoneExamples img.android {
+    height: 120px;
+    left: 150px;
+    top: 100px;
+    clip: rect(10px, 205px, 115px, 23px); }
 
 .textForm {
   max-width: 60%; }
   @media (max-width: 768px) {
     .textForm {
       max-width: 85%;
-      text-align: center; } }
+      text-align: center;
+      margin-bottom: 60px; } }
 
 /* LAYOUT */
 .Field {
@@ -759,6 +770,10 @@ input[type=tel] {
   text-overflow: ellipsis;
   white-space: nowrap; }
 
+input[type=tel]::placeholder {
+  color: #BFBFBF;
+  font-family: "Gotham-Book", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+
 button[type=submit] {
   background-color: #77e8b4;
   /* IE9, iOS 3.2+ */
@@ -785,7 +800,10 @@ button[type=submit] {
 
 .mobileBadge {
   display: inline-block;
-  margin: 30px 10px 0; }
+  margin: 30px 20px 0 0; }
+  @media (max-width: 768px) {
+    .mobileBadge {
+      margin: 30px 8px 0; } }
 
 #footer {
   background: #3c4854;
@@ -794,3 +812,7 @@ button[type=submit] {
     color: white;
     padding: 40px;
     text-align: left; }
+    @media (max-width: 768px) {
+      #footer p {
+        text-align: center;
+        padding: 20px; } }
