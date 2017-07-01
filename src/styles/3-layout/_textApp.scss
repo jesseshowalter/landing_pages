@@ -55,9 +55,12 @@
 .textForm{
   max-width:60%;
   @media (max-width: $breakpoint-tablet) {
+    text-align: center;
+    margin-bottom:40px;
+  }
+  @media (max-width: $breakpoint-mobile) {
     max-width: 85%;
     text-align: center;
-    margin-bottom: 60px;
   }
 }
 
@@ -114,6 +117,7 @@ button[type=submit]{
   border: none;
   font-size: initial;
   color: #FFF;
+  font-size: 12px;
   -webkit-appearance: none !important;
   @media (max-width: $breakpoint-tablet) {
     font-size: 14px;

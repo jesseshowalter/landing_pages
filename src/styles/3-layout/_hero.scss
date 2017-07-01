@@ -1,6 +1,4 @@
 #hero{
-  // background: url('../images/community_banner.jpg') no-repeat center;
-  // background-size: cover;
   background: #000;
   height:600px;
   text-align: center;
@@ -13,12 +11,6 @@
   @media (max-width: $breakpoint-mobile) {
     height: 400px;
     padding: 0 20px;
-  }
-
-  .button{
-    // @media (max-width: $breakpoint-mobile) {
-    //   display: inline-block;
-    // }
   }
 
   #logo{
@@ -71,15 +63,15 @@
     background: #000 url('../images/community_banner.jpg') no-repeat center;
     content: " ";
     background-size:cover;
-    -webkit-filter: blur(13px);
-    -moz-filter: blur(13px);
-    -o-filter: blur(13px);
-    -ms-filter: blur(13px);
-    filter: blur(13px);
+    -webkit-filter: blur(9px);
+    -moz-filter: blur(9px);
+    -o-filter: blur(9px);
+    -ms-filter: blur(9px);
+    filter: blur(9px);
     position:absolute;
     width:105%;
     height:105%;
     z-index: 0;
     opacity: 0.5;
-}
+  }
 }

@@ -641,11 +641,11 @@ strong {
     background: #000 url("../images/community_banner.jpg") no-repeat center;
     content: " ";
     background-size: cover;
-    -webkit-filter: blur(13px);
-    -moz-filter: blur(13px);
-    -o-filter: blur(13px);
-    -ms-filter: blur(13px);
-    filter: blur(13px);
+    -webkit-filter: blur(9px);
+    -moz-filter: blur(9px);
+    -o-filter: blur(9px);
+    -ms-filter: blur(9px);
+    filter: blur(9px);
     position: absolute;
     width: 105%;
     height: 105%;
@@ -756,9 +756,12 @@ strong {
   max-width: 60%; }
   @media (max-width: 768px) {
     .textForm {
-      max-width: 85%;
       text-align: center;
-      margin-bottom: 60px; } }
+      margin-bottom: 40px; } }
+  @media (max-width: 400px) {
+    .textForm {
+      max-width: 85%;
+      text-align: center; } }
 
 /* LAYOUT */
 .Field {
@@ -813,6 +816,7 @@ button[type=submit] {
   border: none;
   font-size: initial;
   color: #FFF;
+  font-size: 12px;
   -webkit-appearance: none !important; }
   @media (max-width: 768px) {
     button[type=submit] {
