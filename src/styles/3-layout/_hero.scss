@@ -1,6 +1,5 @@
 #hero{
-  background: url('../images/community_banner_blur.jpg') no-repeat center;
-  background-size: cover;
+  background: #000;
   height:600px;
   text-align: center;
   color:white;
@@ -8,14 +7,10 @@
   align-items:center;
   justify-content:center;
   position: relative;
+  overflow: hidden;
   @media (max-width: $breakpoint-mobile) {
-    height: 250px;
-  }
-
-  .button{
-    @media (max-width: $breakpoint-mobile) {
-      display: none;
-    }
+    height: 400px;
+    padding: 0 20px;
   }
 
   #logo{
@@ -26,6 +21,7 @@
     height: 40px;
     top:20px;
     right:20px;
+    z-index: 9999;
     @media (max-width: $breakpoint-mobile) {
       width:80px;
       left:50%;
@@ -38,6 +34,7 @@
   .content{
     width:70%;
     max-width:900px;
+    z-index: 9999;
     @media (max-width: $breakpoint-mobile) {
       width:100%;
     }
@@ -58,5 +55,23 @@
       font-size: 14px;
       margin-top:40px;
     }
+  }
+
+  .blur {
+    overflow: hidden;
+    margin: -5px -10px 0px;
+    background: #000 url('../images/community_banner.jpg') no-repeat center;
+    content: " ";
+    background-size:cover;
+    -webkit-filter: blur(9px);
+    -moz-filter: blur(9px);
+    -o-filter: blur(9px);
+    -ms-filter: blur(9px);
+    filter: blur(9px);
+    position:absolute;
+    width:105%;
+    height:105%;
+    z-index: 0;
+    opacity: 0.5;
   }
 }
