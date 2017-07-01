@@ -710,6 +710,9 @@ strong {
         width: 70%;
         float: right; } }
 
+#textApp.container {
+  padding: 0; }
+
 #textApp {
   height: 500px;
   display: flex;
@@ -833,3 +836,5 @@ button[type=submit] {
       #footer p {
         text-align: center;
         padding: 20px; } }
+
+/*# sourceMappingURL=main.css.map */
