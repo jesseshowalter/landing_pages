@@ -7,7 +7,7 @@
 		"uuidString": "A7AC6C27-0C71-4066-AA0E-E805F3E4D8B4"
 		}
 	],
-"creatorBuild": "25813",
+"creatorBuild": "25849",
 "files": {
 	"\/.gitignore": {
 		"ft": 8192,
@@ -71,12 +71,12 @@
 		},
 	"\/build\/images\/community_banner_blur.jpg": {
 		"ft": 16384,
-		"iS": 866041,
+		"iS": 749767,
 		"oA": 0,
 		"oAP": "\/build\/images\/community_banner_blur.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/build\/images\/ic-hands.svg": {
@@ -143,12 +143,12 @@
 		},
 	"\/build\/images\/phones.png": {
 		"ft": 32768,
-		"iS": 482339,
+		"iS": 59320,
 		"oA": 0,
 		"oAP": "\/build\/images\/phones.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -4269,6 +4269,7 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",
