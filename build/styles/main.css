@@ -781,6 +781,7 @@ input[type=tel] {
   border-top: 1px solid #CCC;
   border-bottom: 1px solid #CCC;
   border-left: 1px solid #CCC;
+  border-right: none;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   border-top-left-radius: 8px;
