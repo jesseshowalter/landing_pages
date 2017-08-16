@@ -767,6 +767,9 @@ strong {
 .Field {
   display: flex;
   justify-content: center; }
+  @media (max-width: 400px) {
+    .Field {
+      display: block; } }
 
 .textApp-query {
   flex: 1 0 8em; }
@@ -793,7 +796,14 @@ input[type=tel] {
   font-family: "Gotham-Book", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap; }
+  white-space: nowrap;
+  box-sizing: border-box; }
+  @media (max-width: 400px) {
+    input[type=tel] {
+      border: 1px solid #CCC;
+      border-radius: 8px;
+      width: 100%;
+      text-align: center; } }
 
 input[type=tel]::placeholder {
   color: #BFBFBF;
@@ -819,10 +829,17 @@ button[type=submit] {
   font-size: initial;
   color: #FFF;
   font-size: 12px;
-  -webkit-appearance: none !important; }
+  -webkit-appearance: none !important;
+  box-sizing: border-box; }
   @media (max-width: 768px) {
     button[type=submit] {
       font-size: 14px; } }
+  @media (max-width: 400px) {
+    button[type=submit] {
+      display: inline-block;
+      border-radius: 8px;
+      margin-top: 10px;
+      width: 100%; } }
 
 .mobileBadge {
   display: inline-block;

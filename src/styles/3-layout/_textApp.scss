@@ -68,6 +68,9 @@
 .Field {
   display: flex;
   justify-content: center;
+  @media (max-width: $breakpoint-mobile) {
+    display: block;
+  }
 }
 
 .textApp-query {
@@ -101,6 +104,13 @@ input[type=tel]{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  box-sizing: border-box;
+  @media (max-width: $breakpoint-mobile) {
+    border: 1px solid #CCC;
+    border-radius: 8px;
+    width:100%;
+    text-align: center;
+  }
 }
 input[type=tel]::placeholder {
   color: #BFBFBF;
@@ -121,8 +131,16 @@ button[type=submit]{
   color: #FFF;
   font-size: 12px;
   -webkit-appearance: none !important;
+  box-sizing: border-box;
+
   @media (max-width: $breakpoint-tablet) {
     font-size: 14px;
+  }
+  @media (max-width: $breakpoint-mobile) {
+    display: inline-block;
+    border-radius: 8px;
+    margin-top:10px;
+    width:100%;
   }
 }
 
