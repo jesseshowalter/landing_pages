@@ -637,7 +637,7 @@ strong {
         margin-top: 40px; } }
   #hero .blur {
     overflow: hidden;
-    margin: -5px -10px 0px;
+    margin: -15px -20px 0px;
     background: #000 url("../images/community_banner.jpg") no-repeat center;
     content: " ";
     background-size: cover;
@@ -647,8 +647,8 @@ strong {
     -ms-filter: blur(9px);
     filter: blur(9px);
     position: absolute;
-    width: 105%;
-    height: 105%;
+    width: 130%;
+    height: 130%;
     z-index: 0;
     opacity: 0.5; }
 
