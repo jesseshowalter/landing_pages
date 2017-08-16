@@ -753,19 +753,20 @@ strong {
     clip: rect(10px, 205px, 115px, 23px); }
 
 .textForm {
-  max-width: 60%; }
+  max-width: 90%; }
   @media (max-width: 768px) {
     .textForm {
       text-align: center;
       margin-bottom: 40px; } }
   @media (max-width: 400px) {
     .textForm {
-      max-width: 85%;
+      max-width: 92%;
       text-align: center; } }
 
 /* LAYOUT */
 .Field {
-  display: flex; }
+  display: flex;
+  justify-content: center; }
 
 .textApp-query {
   flex: 1 0 8em; }

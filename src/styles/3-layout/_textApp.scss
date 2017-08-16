@@ -53,13 +53,13 @@
 ////////////////////////////////
 
 .textForm{
-  max-width:60%;
+  max-width:90%;
   @media (max-width: $breakpoint-tablet) {
     text-align: center;
     margin-bottom:40px;
   }
   @media (max-width: $breakpoint-mobile) {
-    max-width: 85%;
+    max-width: 92%;
     text-align: center;
   }
 }
@@ -67,6 +67,7 @@
 /* LAYOUT */
 .Field {
   display: flex;
+  justify-content: center;
 }
 
 .textApp-query {
