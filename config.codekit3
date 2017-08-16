@@ -211,15 +211,15 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/src\/scripts\/app-min.js",
-		"oF": 0,
-		"sC": 1,
+		"oAP": "\/build\/scripts\/app-min.js",
+		"oF": 2,
+		"sC": 0,
 		"tS": 0
 		},
 	"\/src\/scripts\/vendors\/classie.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/src\/scripts\/vendors\/classie-min.js",
 		"oF": 0,
 		"sC": 1,
@@ -228,7 +228,7 @@
 	"\/src\/scripts\/vendors\/jquery-3.1.1.min.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/src\/scripts\/vendors\/jquery-3.1.1.min-min.js",
 		"oF": 0,
 		"sC": 1,
@@ -237,7 +237,7 @@
 	"\/src\/scripts\/vendors\/modernizr.custom.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/src\/scripts\/vendors\/modernizr.custom-min.js",
 		"oF": 0,
 		"sC": 1,
@@ -246,7 +246,7 @@
 	"\/src\/scripts\/vendors\/smoothState.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/src\/scripts\/vendors\/smoothState-min.js",
 		"oF": 0,
 		"sC": 1,
